@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6FA75B6-023A-4EA3-AD58-3FDECAE19872}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ewApps.Chat.DataService.Test</RootNamespace>
+    <AssemblyName>ewApps.Chat.DataService.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ewApps.CommonRuntime.Common">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ewApps.CommonRuntime.Data">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ewApps.CommonRuntime.DataService">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.DataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ewApps.CommonRuntime.DataServiceTest">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.DataService.Test\bin\Debug\ewApps.CommonRuntime.DataServiceTest.dll</HintPath>
+    </Reference>
+    <Reference Include="ewApps.CommonRuntime.Entity">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="ewApps.CommonRuntime.EntityModel">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.EntityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Shared\Reference Dlls\EntLib6\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Shared\Reference Dlls\EntLib6\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Shared\Reference Dlls\EntLib6\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Shared\Reference Dlls\EntLib6\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="ChatBaseDataServiceTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ChatThredDataServiceTest.cs" />
+    <Compile Include="ChatRoomDataServiceTest.cs" />
+    <Compile Include="ChatRoomMemberDataServiceTest.cs" />
+    <Compile Include="ChatMessageDataServiceTest.cs" />
+    <Compile Include="ChatMessageReceiverDataServiceTest.cs" />
+    <Compile Include="ChatMessageAttachmentDataServiceTest.cs" />
+    <Compile Include="ChatThreadMemberDataServiceTest.cs" />
+    <Compile Include="ChatExternalUserDataServiceTest.cs" />
+    <Compile Include="ChatMuteSettingDataServiceTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ewApps.Chat.Common\ewApps.Chat.Common.csproj">
+      <Project>{d856e9da-8178-4830-adec-e45824620a57}</Project>
+      <Name>ewApps.Chat.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.DataService\ewApps.Chat.DataService.csproj">
+      <Project>{968382f3-2499-40e6-b6ed-12344dfeb3a1}</Project>
+      <Name>ewApps.Chat.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.Data\ewApps.Chat.Data.csproj">
+      <Project>{6e927db4-9039-4003-a422-d89fdcd766f3}</Project>
+      <Name>ewApps.Chat.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.EntityModel\ewApps.Chat.EntityModel.csproj">
+      <Project>{e4a3b063-2867-4953-a726-bd6b4fffdea0}</Project>
+      <Name>ewApps.Chat.EntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.Entity\ewApps.Chat.Entity.csproj">
+      <Project>{004291f3-ce8d-4e8f-94ce-865f9cd840df}</Project>
+      <Name>ewApps.Chat.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

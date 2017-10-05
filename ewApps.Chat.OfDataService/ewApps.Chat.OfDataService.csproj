@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C0EB817-AF66-445F-9A04-34A7E345E054}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ewApps.Chat.OfDataService</RootNamespace>
+    <AssemblyName>ewApps.Chat.OfDataService</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ewApps.CommonRuntime.Common">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ewApps.CommonRuntime.Entity">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="ewApps.CommonRuntime.EntityModel">
+      <HintPath>..\..\CommonRuntime\ewApps.CommonRuntime.Test\bin\Debug\ewApps.CommonRuntime.EntityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityDataService\BaseOfDataService.cs" />
+    <Compile Include="EntityDataService\ChatDataServiceFactory.cs" />
+    <Compile Include="Interface\IUserOfDataService.cs" />
+    <Compile Include="Interface\IRoomOfDataService.cs" />
+    <Compile Include="Interface\IRoomMemberOfDataService.cs" />
+    <Compile Include="EntityDataService\RoomMemberOfDataService.cs" />
+    <Compile Include="EntityDataService\RoomOfDataService.cs" />
+    <Compile Include="EntityDataService\UserOfDataService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ewApps.Chat.Common\ewApps.Chat.Common.csproj">
+      <Project>{d856e9da-8178-4830-adec-e45824620a57}</Project>
+      <Name>ewApps.Chat.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.EntityModel\ewApps.Chat.EntityModel.csproj">
+      <Project>{e4a3b063-2867-4953-a726-bd6b4fffdea0}</Project>
+      <Name>ewApps.Chat.EntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.Entity\ewApps.Chat.Entity.csproj">
+      <Project>{004291f3-ce8d-4e8f-94ce-865f9cd840df}</Project>
+      <Name>ewApps.Chat.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

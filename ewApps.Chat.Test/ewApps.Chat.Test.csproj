@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9C04862-2974-4A30-84DF-DB0ECC91A94B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ewApps.Chat.Test</RootNamespace>
+    <AssemblyName>ewApps.Chat.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ewApps.Chat.Common\ewApps.Chat.Common.csproj">
+      <Project>{d856e9da-8178-4830-adec-e45824620a57}</Project>
+      <Name>ewApps.Chat.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.DataService\ewApps.Chat.DataService.csproj">
+      <Project>{968382f3-2499-40e6-b6ed-12344dfeb3a1}</Project>
+      <Name>ewApps.Chat.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.Data\ewApps.Chat.Data.csproj">
+      <Project>{6e927db4-9039-4003-a422-d89fdcd766f3}</Project>
+      <Name>ewApps.Chat.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.EntityModel\ewApps.Chat.EntityModel.csproj">
+      <Project>{e4a3b063-2867-4953-a726-bd6b4fffdea0}</Project>
+      <Name>ewApps.Chat.EntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.Entity\ewApps.Chat.Entity.csproj">
+      <Project>{004291f3-ce8d-4e8f-94ce-865f9cd840df}</Project>
+      <Name>ewApps.Chat.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ewApps.Chat.OfDataService\ewApps.Chat.OfDataService.csproj">
+      <Project>{2c0eb817-af66-445f-9a04-34a7e345e054}</Project>
+      <Name>ewApps.Chat.OfDataService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

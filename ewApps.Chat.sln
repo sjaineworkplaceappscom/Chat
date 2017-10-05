@@ -1,0 +1,112 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.Common", "ewApps.Chat.Common\ewApps.Chat.Common.csproj", "{D856E9DA-8178-4830-ADEC-E45824620A57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.Entity", "ewApps.Chat.Entity\ewApps.Chat.Entity.csproj", "{004291F3-CE8D-4E8F-94CE-865F9CD840DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.Data", "ewApps.Chat.Data\ewApps.Chat.Data.csproj", "{6E927DB4-9039-4003-A422-D89FDCD766F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.DataService", "ewApps.Chat.DataService\ewApps.Chat.DataService.csproj", "{968382F3-2499-40E6-B6ED-12344DFEB3A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.Service", "ewApps.Chat.Service\ewApps.Chat.Service.csproj", "{265C9832-546A-4E51-94F4-7FC9C99FBC47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.OfDataService", "ewApps.Chat.OfDataService\ewApps.Chat.OfDataService.csproj", "{2C0EB817-AF66-445F-9A04-34A7E345E054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.EntityModel", "ewApps.Chat.EntityModel\ewApps.Chat.EntityModel.csproj", "{E4A3B063-2867-4953-A726-BD6B4FFFDEA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.SyncService", "ewApps.Chat.SyncService\ewApps.Chat.SyncService.csproj", "{0F2EF254-9841-453D-BF44-EC255848F1EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.DataService.Test", "ewApps.Chat.DataService.Test\ewApps.Chat.DataService.Test.csproj", "{B6FA75B6-023A-4EA3-AD58-3FDECAE19872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ewApps.Chat.Test", "ewApps.Chat.Test\ewApps.Chat.Test.csproj", "{D9C04862-2974-4A30-84DF-DB0ECC91A94B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ewp-tfs2:8080/tfs/ewapps
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ewApps.Chat.Common\\ewApps.Chat.Common.csproj
+		SccProjectName1 = ewApps.Chat.Common
+		SccLocalPath1 = ewApps.Chat.Common
+		SccProjectUniqueName2 = ewApps.Chat.Data\\ewApps.Chat.Data.csproj
+		SccProjectName2 = ewApps.Chat.Data
+		SccLocalPath2 = ewApps.Chat.Data
+		SccProjectUniqueName3 = ewApps.Chat.DataService\\ewApps.Chat.DataService.csproj
+		SccProjectName3 = ewApps.Chat.DataService
+		SccLocalPath3 = ewApps.Chat.DataService
+		SccProjectUniqueName4 = ewApps.Chat.Entity\\ewApps.Chat.Entity.csproj
+		SccProjectName4 = ewApps.Chat.Entity
+		SccLocalPath4 = ewApps.Chat.Entity
+		SccProjectUniqueName5 = ewApps.Chat.Service\\ewApps.Chat.Service.csproj
+		SccProjectName5 = ewApps.Chat.Service
+		SccLocalPath5 = ewApps.Chat.Service
+		SccProjectUniqueName6 = ewApps.Chat.OfDataService\\ewApps.Chat.OfDataService.csproj
+		SccProjectName6 = ewApps.Chat.OfDataService
+		SccLocalPath6 = ewApps.Chat.OfDataService
+		SccProjectUniqueName7 = ewApps.Chat.EntityModel\\ewApps.Chat.EntityModel.csproj
+		SccProjectName7 = ewApps.Chat.EntityModel
+		SccLocalPath7 = ewApps.Chat.EntityModel
+		SccProjectUniqueName8 = ewApps.Chat.SyncService\\ewApps.Chat.SyncService.csproj
+		SccProjectName8 = ewApps.Chat.SyncService
+		SccLocalPath8 = ewApps.Chat.SyncService
+		SccProjectUniqueName9 = ewApps.Chat.DataService.Test\\ewApps.Chat.DataService.Test.csproj
+		SccProjectName9 = ewApps.Chat.DataService.Test
+		SccLocalPath9 = ewApps.Chat.DataService.Test
+		SccProjectUniqueName10 = ewApps.Chat.Test\\ewApps.Chat.Test.csproj
+		SccProjectName10 = ewApps.Chat.Test
+		SccLocalPath10 = ewApps.Chat.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D856E9DA-8178-4830-ADEC-E45824620A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D856E9DA-8178-4830-ADEC-E45824620A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D856E9DA-8178-4830-ADEC-E45824620A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D856E9DA-8178-4830-ADEC-E45824620A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004291F3-CE8D-4E8F-94CE-865F9CD840DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004291F3-CE8D-4E8F-94CE-865F9CD840DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004291F3-CE8D-4E8F-94CE-865F9CD840DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004291F3-CE8D-4E8F-94CE-865F9CD840DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E927DB4-9039-4003-A422-D89FDCD766F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E927DB4-9039-4003-A422-D89FDCD766F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E927DB4-9039-4003-A422-D89FDCD766F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E927DB4-9039-4003-A422-D89FDCD766F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968382F3-2499-40E6-B6ED-12344DFEB3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968382F3-2499-40E6-B6ED-12344DFEB3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968382F3-2499-40E6-B6ED-12344DFEB3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968382F3-2499-40E6-B6ED-12344DFEB3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265C9832-546A-4E51-94F4-7FC9C99FBC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265C9832-546A-4E51-94F4-7FC9C99FBC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265C9832-546A-4E51-94F4-7FC9C99FBC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265C9832-546A-4E51-94F4-7FC9C99FBC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0EB817-AF66-445F-9A04-34A7E345E054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0EB817-AF66-445F-9A04-34A7E345E054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0EB817-AF66-445F-9A04-34A7E345E054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0EB817-AF66-445F-9A04-34A7E345E054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A3B063-2867-4953-A726-BD6B4FFFDEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A3B063-2867-4953-A726-BD6B4FFFDEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A3B063-2867-4953-A726-BD6B4FFFDEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A3B063-2867-4953-A726-BD6B4FFFDEA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2EF254-9841-453D-BF44-EC255848F1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2EF254-9841-453D-BF44-EC255848F1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2EF254-9841-453D-BF44-EC255848F1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2EF254-9841-453D-BF44-EC255848F1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FA75B6-023A-4EA3-AD58-3FDECAE19872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FA75B6-023A-4EA3-AD58-3FDECAE19872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FA75B6-023A-4EA3-AD58-3FDECAE19872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FA75B6-023A-4EA3-AD58-3FDECAE19872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C04862-2974-4A30-84DF-DB0ECC91A94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C04862-2974-4A30-84DF-DB0ECC91A94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C04862-2974-4A30-84DF-DB0ECC91A94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C04862-2974-4A30-84DF-DB0ECC91A94B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
